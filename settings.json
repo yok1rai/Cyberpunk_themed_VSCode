@@ -1,189 +1,197 @@
 {
     // ===================== ⚡ CYBERPUNK EDITION ⚡ =====================
+    // Custom futuristic theme setup for VS Code
 
     // ===== 🎨 Editor Appearance =====
-    "editor.fontFamily": "JetBrains Mono, Fira Code, monospace",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 15,
-    "editor.lineHeight": 1.6,
-    "editor.cursorBlinking": "expand",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.cursorWidth": 2,
-    "editor.smoothScrolling": true,
-    "editor.wordWrap": "on",
-    "editor.renderWhitespace": "boundary",
-    "editor.renderControlCharacters": false,
-    "editor.guides.indentation": true,
-    "editor.guides.bracketPairs": true,
-    "editor.stickyScroll.enabled": true,
-    "editor.scrollbar.verticalScrollbarSize": 10,
-    "editor.scrollbar.horizontalScrollbarSize": 10,
-    "editor.bracketPairColorization.enabled": true,
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "editor.minimap.enabled": true,
-    "editor.minimap.renderCharacters": false,
-    "editor.minimap.scale": 2,
-    "editor.minimap.size": "fit",
-    "editor.cursorSurroundingLines": 3,
-    "editor.cursorSurroundingLinesStyle": "all",
-    "editor.renderLineHighlight": "gutter",
-    "editor.linkedEditing": true,
+    "editor.fontFamily": "JetBrains Mono, Fira Code, monospace", // Sets the main editor font
+    "editor.fontLigatures": true, // Enables ligatures for special character combinations
+    "editor.fontSize": 15, // Sets font size to 15px
+    "editor.lineHeight": 1.6, // Adjusts line height spacing
+    "editor.cursorBlinking": "expand", // Expands cursor when blinking
+    "editor.cursorSmoothCaretAnimation": "on", // Enables smooth cursor animation
+    "editor.cursorWidth": 2, // Makes cursor slightly thicker
+    "editor.smoothScrolling": true, // Enables smooth scrolling
+    "editor.wordWrap": "on", // Wraps long lines automatically
+    "editor.renderWhitespace": "boundary", // Shows spaces and tabs at text boundaries
+    "editor.renderControlCharacters": false, // Hides invisible control characters
+    "editor.guides.indentation": true, // Shows vertical indentation guides
+    "editor.guides.bracketPairs": true, // Shows visual guides connecting brackets
+    "editor.stickyScroll.enabled": true, // Keeps current code section header visible when scrolling
+    "editor.scrollbar.verticalScrollbarSize": 10, // Sets vertical scrollbar width
+    "editor.scrollbar.horizontalScrollbarSize": 10, // Sets horizontal scrollbar height
+    "editor.bracketPairColorization.enabled": true, // Enables colorized brackets
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true, // Different colors for each bracket type
+    "editor.minimap.enabled": true, // Enables minimap on the side
+    "editor.minimap.renderCharacters": false, // Renders minimap as blocks, not text
+    "editor.minimap.scale": 2, // Zooms in minimap for clarity
+    "editor.minimap.size": "fit", // Fits minimap size dynamically
+    "editor.cursorSurroundingLines": 3, // Keeps 3 lines visible around cursor
+    "editor.cursorSurroundingLinesStyle": "all", // Always apply surrounding lines visibility
+    "editor.renderLineHighlight": "gutter", // Highlights current line in gutter area
+    "editor.linkedEditing": true, // Automatically edits matching tags (like HTML open/close)
 
     // ===== ⚙️ Behavior & Performance =====
-    "files.autoSave": "onWindowChange",
-    "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true,
-    "files.encoding": "utf8",
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "editor.quickSuggestions": {
-        "other": true,
-        "comments": false,
-        "strings": true
+    "files.autoSave": "afterDelay", // Auto-saves files after a short delay
+    "files.trimTrailingWhitespace": true, // Removes spaces at end of lines on save
+    "files.insertFinalNewline": true, // Adds a newline at the end of the file
+    "files.encoding": "utf8", // Uses UTF-8 encoding for files
+    "explorer.confirmDelete": false, // Disables delete confirmation dialogs
+    "explorer.confirmDragAndDrop": false, // Disables drag-and-drop confirmation
+    "editor.quickSuggestions": { // Controls auto-suggestion behavior
+        "other": true, // Enables general suggestions
+        "comments": false, // Disables suggestions inside comments
+        "strings": true // Enables suggestions inside strings
     },
-    "editor.suggestSelection": "recentlyUsedByPrefix",
-    "editor.tabSize": 4,
-    "editor.detectIndentation": true,
-    "editor.renderFinalNewline": "on",
-    "terminal.integrated.enablePersistentSessions": true,
-    "editor.accessibilitySupport": "off",
+    "editor.suggestSelection": "recentlyUsedByPrefix", // Prioritizes suggestions based on previous usage
+    "editor.tabSize": 4, // Sets tab width to 4 spaces
+    "editor.detectIndentation": true, // Automatically detects indentation style
+    "editor.renderFinalNewline": "on", // Shows final newline if present
+    "terminal.integrated.enablePersistentSessions": true, // Keeps terminal sessions between restarts
+    "editor.accessibilitySupport": "off", // Disables accessibility mode (for performance)
 
     // 👉 Minimal, snippet-first suggestions (no AI blocks)
-    "editor.inlineSuggest.enabled": false,
-    "editor.suggest.preview": false,
-    "editor.snippetSuggestions": "top",
-    "editor.suggest.showSnippets": true,
-    "editor.quickSuggestionsDelay": 150,
-    "editor.suggest.showWords": true,
-    "editor.suggest.showVariables": true,
-    "editor.suggest.showFunctions": true,
-    "editor.suggest.showModules": true,
-    "editor.suggest.showClasses": true,
+    "editor.inlineSuggest.enabled": false, // Disables inline AI-like suggestions
+    "editor.suggest.preview": false, // Hides suggestion preview ghost text
+    "editor.snippetSuggestions": "top", // Places snippets at top of suggestions
+    "editor.suggest.showSnippets": true, // Shows snippets in suggestions
+    "editor.quickSuggestionsDelay": 150, // Sets suggestion delay in ms
+    "editor.suggest.showWords": true, // Includes document words in suggestions
+    "editor.suggest.showVariables": true, // Includes variables in suggestions
+    "editor.suggest.showFunctions": true, // Includes functions in suggestions
+    "editor.suggest.showModules": true, // Includes modules in suggestions
+    "editor.suggest.showClasses": true, // Includes classes in suggestions
 
-    "editor.parameterHints.enabled": true,
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "editor.codeActionsOnSave": {
+    "editor.parameterHints.enabled": true, // Shows function parameter hints
+    "editor.formatOnSave": true, // Auto-formats code when saving
+    "editor.formatOnPaste": true, // Auto-formats pasted code
+    "editor.codeActionsOnSave": { // Runs auto-fix actions on save
         "source.fixAll": "explicit",
         "source.organizeImports": "explicit"
     },
-    "editor.wordBasedSuggestionsMode": "currentDocument",
-    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.wordBasedSuggestionsMode": "currentDocument", // Suggests words from current document only
+    "editor.unicodeHighlight.nonBasicASCII": false, // Allows Unicode symbols like emojis
 
     // ===== 💻 Terminal =====
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.fontFamily": "JetBrains Mono, monospace",
-    "terminal.integrated.cursorStyle": "block",
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.scrollback": 5000,
-    "terminal.integrated.smoothScrolling": true,
-    "terminal.integrated.rightClickBehavior": "paste",
-    "terminal.integrated.tabs.enabled": true,
-    "terminal.integrated.tabs.location": "left",
+    "terminal.integrated.fontSize": 14, // Sets terminal font size
+    "terminal.integrated.fontFamily": "JetBrains Mono, monospace", // Terminal font family
+    "terminal.integrated.cursorStyle": "block", // Block-style terminal cursor
+    "terminal.integrated.cursorBlinking": true, // Enables blinking cursor
+    "terminal.integrated.scrollback": 5000, // Keeps 5000 lines of terminal history
+    "terminal.integrated.smoothScrolling": true, // Enables smooth scrolling
+    "terminal.integrated.rightClickBehavior": "paste", // Right-click pastes text
+    "terminal.integrated.tabs.enabled": true, // Enables terminal tabs
+    "terminal.integrated.tabs.location": "left", // Places terminal tabs on the left side
 
     // ===== 🪟 UI / Window / Layout =====
-    "window.titleBarStyle": "custom",
-    "window.zoomLevel": 0,
-    "window.commandCenter": true,
-    "workbench.startupEditor": "none",
-    "workbench.editor.centeredLayoutAutoResize": true,
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Tokyo Night Storm",
-    "workbench.statusBar.visible": true,
-    "workbench.list.smoothScrolling": true,
-    "workbench.tree.indent": 16,
-    "workbench.list.openMode": "doubleClick",
-    "breadcrumbs.enabled": true,
-    "workbench.editor.enablePreview": false,
-    "explorer.compactFolders": false,
+    "window.titleBarStyle": "custom", // Uses custom VS Code title bar
+    "window.zoomLevel": 0, // Default zoom (0 = normal)
+    "window.commandCenter": true, // Shows command center in title bar
+    "workbench.startupEditor": "none", // No welcome page on startup
+    "workbench.editor.centeredLayoutAutoResize": true, // Auto-adjusts editor layout
+    "workbench.iconTheme": "vscode-icons", // Uses vscode-icons for files/folders
+    "workbench.colorTheme": "Tokyo Night Storm", // Sets main theme
+    "workbench.statusBar.visible": true, // Shows status bar
+    "workbench.list.smoothScrolling": true, // Smooth scroll for lists
+    "workbench.tree.indent": 16, // Sets file tree indentation width
+    "workbench.list.openMode": "doubleClick", // Opens items with double-click
+    "breadcrumbs.enabled": true, // Enables navigation breadcrumbs
+    "workbench.editor.enablePreview": false, // Opens files permanently (not as preview)
+    "explorer.compactFolders": false, // Shows full folder hierarchy (not compacted)
 
     // ===== 🌈 Color Customization (CYBERPUNK MODE) =====
-    "workbench.colorCustomizations": {
-        "editor.background": "#0d0f1a",
-        "editor.foreground": "#e6e6fa",
-        "editorCursor.foreground": "#ff00ff",
-        "editor.selectionBackground": "#4b008266",
-        "editor.inactiveSelectionBackground": "#2a003344",
-        "editorLineNumber.foreground": "#30364d",
-        "editorLineNumber.activeForeground": "#ff00ff",
-        "editorIndentGuide.background1": "#272a3f",
-        "editorIndentGuide.background2": "#2f2f44",
-        "editorIndentGuide.activeBackground1": "#ff00ff44",
-        "editorIndentGuide.activeBackground2": "#00ffff44",
-        "editor.lineHighlightBackground": "#3b006a55",
-        "editor.lineHighlightBorder": "#ff00ff99",
-        "editorBracketHighlight.foreground1": "#FF00FF",
-        "editorBracketHighlight.foreground2": "#00FFFF",
-        "editorBracketHighlight.foreground3": "#39FF14",
-        "editorBracketHighlight.foreground4": "#FFD500",
-        "editorBracketHighlight.foreground5": "#FF66FF",
-        "editorBracketHighlight.foreground6": "#00FF9C",
-        "editorBracketHighlight.unexpectedBracket.foreground": "#FF3366",
-        "editorBracketHighlight.border1": "#FF00FF99",
-        "editorBracketHighlight.border2": "#00FFFF99",
-        "editorBracketHighlight.border3": "#39FF1499",
-        "editorBracketHighlight.border4": "#FFD50099",
-        "editorBracketHighlight.border5": "#FF66FF99",
-        "editorBracketHighlight.border6": "#00FF9C99",
-        "editorBracketHighlight.unexpectedBracket.border": "#FF336699",
-        "editorBracketPairGuide.activeBackground1": "#FF00FF66",
-        "editorBracketPairGuide.activeBackground2": "#00FFFF66",
-        "editorBracketPairGuide.activeBackground3": "#39FF1466",
-        "editorBracketPairGuide.activeBackground4": "#FFD50066",
-        "editorBracketPairGuide.activeBackground5": "#FF66FF66",
-        "editorBracketPairGuide.activeBackground6": "#00FF9C66",
-        "editorBracketPairGuide.background1": "#FF00FF33",
-        "editorBracketPairGuide.background2": "#00FFFF33",
-        "editorBracketPairGuide.background3": "#39FF1433",
-        "editorBracketPairGuide.background4": "#FFD50033",
-        "editorBracketPairGuide.background5": "#FF66FF33",
-        "editorBracketPairGuide.background6": "#00FF9C33",
-        "sideBar.background": "#0f1220",
-        "sideBar.foreground": "#b8b9ff",
-        "tab.activeBackground": "#0d0f1a",
-        "tab.activeForeground": "#ffccff",
-        "tab.inactiveBackground": "#120a1c",
-        "tab.inactiveForeground": "#6f6fa7",
-        "tab.border": "#200033",
-        "terminal.background": "#0d0f1a",
-        "terminal.foreground": "#dcdcff",
-        "terminalCursor.foreground": "#ff00ff",
-        "terminal.ansiBlack": "#1a1a2f",
-        "terminal.ansiRed": "#ff004f",
-        "terminal.ansiGreen": "#00ff9c",
-        "terminal.ansiYellow": "#ffea00",
-        "terminal.ansiBlue": "#00bfff",
-        "terminal.ansiMagenta": "#ff00ff",
-        "terminal.ansiCyan": "#00fff0",
-        "terminal.ansiWhite": "#e6e6fa",
-        "editorGutter.modifiedBackground": "#00fff040",
-        "editorGutter.addedBackground": "#00ff9c40",
-        "editorGutter.deletedBackground": "#ff004f40",
-        "statusBar.background": "#10001a",
-        "statusBar.foreground": "#ff66ff",
-        "activityBar.background": "#0b0e19",
-        "activityBar.foreground": "#ff00ff",
-        "activityBarBadge.background": "#ff00ff",
-        "activityBarBadge.foreground": "#0d0f1a",
-        "titleBar.activeBackground": "#0f1220",
-        "titleBar.activeForeground": "#ffccff",
-        "titleBar.inactiveBackground": "#0d0f1a",
-        "titleBar.inactiveForeground": "#777799"
+    "workbench.colorCustomizations": { // Overrides theme colors
+        "editor.background": "#0d0f1a", // Editor background color
+        "editor.foreground": "#e6e6fa", // Main text color
+        "editorCursor.foreground": "#ff00ff", // Cursor color (magenta)
+        "editor.selectionBackground": "#4b008266", // Selection background
+        "editor.inactiveSelectionBackground": "#2a003344", // Inactive selection color
+        "editorLineNumber.foreground": "#30364d", // Line number color
+        "editorLineNumber.activeForeground": "#ff00ff", // Active line number color
+        "editorIndentGuide.background1": "#272a3f", // First indent guide color
+        "editorIndentGuide.background2": "#2f2f44", // Second indent guide color
+        "editorIndentGuide.activeBackground1": "#ff00ff44", // Active indent guide 1
+        "editorIndentGuide.activeBackground2": "#00ffff44", // Active indent guide 2
+        "editor.lineHighlightBackground": "#3b006a55", // Line highlight background
+        "editor.lineHighlightBorder": "#ff00ff99", // Line highlight border
+        "editorBracketHighlight.foreground1": "#FF00FF", // Bracket color 1
+        "editorBracketHighlight.foreground2": "#00FFFF", // Bracket color 2
+        "editorBracketHighlight.foreground3": "#39FF14", // Bracket color 3
+        "editorBracketHighlight.foreground4": "#FFD500", // Bracket color 4
+        "editorBracketHighlight.foreground5": "#FF66FF", // Bracket color 5
+        "editorBracketHighlight.foreground6": "#00FF9C", // Bracket color 6
+        "editorBracketHighlight.unexpectedBracket.foreground": "#FF3366", // Error bracket color
+        "editorBracketHighlight.border1": "#FF00FF99", // Border for bracket 1
+        "editorBracketHighlight.border2": "#00FFFF99", // Border for bracket 2
+        "editorBracketHighlight.border3": "#39FF1499", // Border for bracket 3
+        "editorBracketHighlight.border4": "#FFD50099", // Border for bracket 4
+        "editorBracketHighlight.border5": "#FF66FF99", // Border for bracket 5
+        "editorBracketHighlight.border6": "#00FF9C99", // Border for bracket 6
+        "editorBracketHighlight.unexpectedBracket.border": "#FF336699", // Error bracket border
+        "editorBracketPairGuide.activeBackground1": "#FF00FF66", // Active bracket guide color 1
+        "editorBracketPairGuide.activeBackground2": "#00FFFF66", // Active bracket guide color 2
+        "editorBracketPairGuide.activeBackground3": "#39FF1466", // Active bracket guide color 3
+        "editorBracketPairGuide.activeBackground4": "#FFD50066", // Active bracket guide color 4
+        "editorBracketPairGuide.activeBackground5": "#FF66FF66", // Active bracket guide color 5
+        "editorBracketPairGuide.activeBackground6": "#00FF9C66", // Active bracket guide color 6
+        "editorBracketPairGuide.background1": "#FF00FF33", // Bracket guide background 1
+        "editorBracketPairGuide.background2": "#00FFFF33", // Bracket guide background 2
+        "editorBracketPairGuide.background3": "#39FF1433", // Bracket guide background 3
+        "editorBracketPairGuide.background4": "#FFD50033", // Bracket guide background 4
+        "editorBracketPairGuide.background5": "#FF66FF33", // Bracket guide background 5
+        "editorBracketPairGuide.background6": "#00FF9C33", // Bracket guide background 6
+        "sideBar.background": "#0f1220", // Sidebar background color
+        "sideBar.foreground": "#b8b9ff", // Sidebar text color
+        "tab.activeBackground": "#0d0f1a", // Active tab background
+        "tab.activeForeground": "#ffccff", // Active tab text
+        "tab.inactiveBackground": "#120a1c", // Inactive tab background
+        "tab.inactiveForeground": "#6f6fa7", // Inactive tab text
+        "tab.border": "#200033", // Tab border color
+        "terminal.background": "#0d0f1a", // Terminal background
+        "terminal.foreground": "#dcdcff", // Terminal text color
+        "terminalCursor.foreground": "#ff00ff", // Terminal cursor color
+        "terminal.ansiBlack": "#1a1a2f", // ANSI black color
+        "terminal.ansiRed": "#ff004f", // ANSI red color
+        "terminal.ansiGreen": "#00ff9c", // ANSI green color
+        "terminal.ansiYellow": "#ffea00", // ANSI yellow color
+        "terminal.ansiBlue": "#00bfff", // ANSI blue color
+        "terminal.ansiMagenta": "#ff00ff", // ANSI magenta color
+        "terminal.ansiCyan": "#00fff0", // ANSI cyan color
+        "terminal.ansiWhite": "#e6e6fa", // ANSI white color
+        "editorGutter.modifiedBackground": "#00fff040", // Git modified line indicator
+        "editorGutter.addedBackground": "#00ff9c40", // Git added line indicator
+        "editorGutter.deletedBackground": "#ff004f40", // Git deleted line indicator
+        "statusBar.background": "#10001a", // Status bar background
+        "statusBar.foreground": "#ff66ff", // Status bar text color
+        "activityBar.background": "#0b0e19", // Activity bar background
+        "activityBar.foreground": "#ff00ff", // Activity bar icon color
+        "activityBarBadge.background": "#ff00ff", // Badge color on activity bar
+        "activityBarBadge.foreground": "#0d0f1a", // Badge text color
+        "titleBar.activeBackground": "#0f1220", // Active title bar background
+        "titleBar.activeForeground": "#ffccff", // Active title bar text
+        "titleBar.inactiveBackground": "#0d0f1a", // Inactive title bar background
+        "titleBar.inactiveForeground": "#777799" // Inactive title bar text
     },
 
     // ===== 🔮 CYBERPUNK SYNTAX HIGHLIGHTING =====
     "editor.tokenColorCustomizations": {
         "textMateRules": [
-            { "scope": ["keyword", "storage.type", "storage.modifier"], "settings": { "foreground": "#ff00ff", "fontStyle": "bold" } },
-            { "scope": ["entity.name.function", "support.function", "meta.function-call"], "settings": { "foreground": "#00ffff", "fontStyle": "italic" } },
-            { "scope": ["string", "constant.other.symbol"], "settings": { "foreground": "#39FF14" } },
-            { "scope": ["constant.numeric", "constant.language"], "settings": { "foreground": "#FFD500" } },
-            { "scope": ["entity.name.type", "support.class", "storage.type.class"], "settings": { "foreground": "#ff66ff" } },
-            { "scope": ["variable", "variable.parameter", "variable.other.readwrite"], "settings": { "foreground": "#00bfff" } },
-            { "scope": ["comment", "punctuation.definition.comment"], "settings": { "foreground": "#6f6fa7", "fontStyle": "italic" } },
-            { "scope": ["keyword.operator"], "settings": { "foreground": "#ff3366" } },
-            { "scope": ["punctuation", "punctuation.separator", "punctuation.terminator"], "settings": { "foreground": "#b8b9ff" } },
-            { "scope": ["keyword.control.import", "meta.import", "support.module"], "settings": { "foreground": "#00FF9C", "fontStyle": "bold" } }
+            { "scope": ["keyword", "storage.type", "storage.modifier"], "settings": { "foreground": "#ff00ff", "fontStyle": "bold" } }, // Keywords and modifiers in magenta bold
+            { "scope": ["entity.name.function", "support.function", "meta.function-call"], "settings": { "foreground": "#00ffff", "fontStyle": "italic" } }, // Functions in cyan italics
+            { "scope": ["string", "constant.other.symbol"], "settings": { "foreground": "#39FF14" } }, // Strings in neon green
+            { "scope": ["constant.numeric", "constant.language"], "settings": { "foreground": "#FFD500" } }, // Numbers and constants in yellow
+            { "scope": ["entity.name.type", "support.class", "storage.type.class"], "settings": { "foreground": "#ff66ff" } }, // Classes and types in pink
+            { "scope": ["variable", "variable.parameter", "variable.other.readwrite"], "settings": { "foreground": "#00bfff" } }, // Variables in light blue
+            { "scope": ["comment", "punctuation.definition.comment"], "settings": { "foreground": "#6f6fa7", "fontStyle": "italic" } }, // Comments in gray italics
+            { "scope": ["keyword.operator"], "settings": { "foreground": "#ff3366" } }, // Operators in red-pink
+            { "scope": ["punctuation", "punctuation.separator", "punctuation.terminator"], "settings": { "foreground": "#b8b9ff" } }, // Punctuation in lavender
+            { "scope": ["keyword.control.import", "meta.import", "support.module"], "settings": { "foreground": "#00FF9C", "fontStyle": "bold" } } // Imports in bright green bold
         ]
-    }
+    },
+    "workbench.settings.applyToAllProfiles": [
+        "code-runner.runInTerminal" // Applies to all profiles
+    ],
+    "code-runner.runInTerminal": true, // Runs code in the terminal, not output pane
+    "workbench.editor.empty.hint": "hidden", // Hides empty editor hints
+    "liveServer.settings.donotVerifyTags": true, // Disables tag validation in Live Server
+    "liveServer.settings.donotShowInfoMsg": true // Hides Live Server info messages
 }
